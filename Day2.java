@@ -20,13 +20,24 @@ public class Day2{
         // else{
         //     System.out.println(c +" is largest in 3 number");
         // }
-        
+
 // Check its ODD OR EVEN
-        if(a % 2 != 0){
-            System.out.println( a + " is  ODD Number");
-        }
-        else{
-            System.out.println( a + " is  EVEN Number");
-        }
+        // if(a % 2 != 0){
+        //     System.out.println( a + " is  ODD Number");
+        // }
+        // else{
+        //     System.out.println( a + " is  EVEN Number");
+        // }
+
+
+// Swapping Number
+System.out.println(" Before Swapping " + a + " " + b );
+        int temp = 0;
+        temp = a;
+        a = b ;
+        b = temp ;
+        
+System.out.println(" After Swapping " + a + " " + b );
+
     }
 }
