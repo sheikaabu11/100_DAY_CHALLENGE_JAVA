@@ -15,17 +15,23 @@ public class Day9 {
 
 
         // Dupicte characters
-        Scanner sc = new Scanner(System.in);
-        String word = sc.next();
-        HashMap<Character,Integer> words = new HashMap<>();
-        for (char ch :word.toCharArray()) {
-            words.put(ch,words.getOrDefault(ch,0)+1);
-        }
-        for (char ch : words.keySet()) {
-            if(words.get(ch)>1){
-                System.out.println(ch + "  Appears "+ words.get(ch)+  " times ");
-            }
-        }
+        // Scanner sc = new Scanner(System.in);
+        // String word = sc.next();
+        // HashMap<Character,Integer> words = new HashMap<>();
+        // for (char ch :word.toCharArray()) {
+        //     words.put(ch,words.getOrDefault(ch,0)+1);
+        // }
+        // for (char ch : words.keySet()) {
+        //     if(words.get(ch)>1){
+        //         System.out.println(ch + "  Appears "+ words.get(ch)+  " times ");
+        //     }
+        // }
+
+        // RemoveSpace from string 
+        Scanner sc =  new Scanner(System.in);
+        String text = sc.nextLine();
+        String result = text.replace(" ", "");
+        System.out.println(result);
 
     }
 }
